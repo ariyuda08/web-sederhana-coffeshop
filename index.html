@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffeshop</title>
+    <!-- Link bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Link css eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="logo.png" alt="Coffeshop" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promo">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div id="home" class="jumbotron jumbotron-fluid bg-coffee" style="padding-top: 150px; padding-bottom: 150px">
+      <div class="container text-center">
+        <h1 class="display-4">Selamat Datang di Coffeshop</h1>
+        <p class="lead">Tempat nongkrong asyik dengan kopi nikmat dan suasana cozy</p>
+        <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+        <div class="coffee-animation">
+          <img src="coffee-cup.png" alt="Coffee Cup" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu" class="container">
+      <h2 class="text-center">Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="latte.png" class="card-img-top" alt="Latte" />
+            <div class="card-body">
+              <h5 class="card-title">Latte</h5>
+              <p class="card-text">Kopi susu dengan busa lembut yang menggugah selera</p>
+              <p class="card-text"><small class="text-muted">Rp. 25.000</small></p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="cappuccino.png" class="card-img-top" alt="Cappuccino" />
+            <div class="card-body">
+              <h5 class="card-title">Cappuccino</h5>
+              <p class="card-text">Kopi dengan rasio susu dan busa yang seimbang dan nikmat</p>
+              <p class="card-text"><small class="text-muted">Rp. 20.000</small></p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="espresso.png" class="card-img-top" alt="Espresso" />
+            <div class="card-body">
+              <h5 class="card-title">Espresso</h5>
+              <p class="card-text">Kopi hitam dengan rasa pahit yang kuat dan aroma yang harum</p>
+              <p class="card-text"><small class="text-muted">Rp. 15.000</small></p>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo -->
+    <div id="promo" class="jumbotron jumbotron-fluid bg-light">
+      <div class="container text-center">
+        <h2>Promo Hari Ini</h2>
+        <p class="lead">Dapatkan diskon 20% untuk semua menu minuman kopi dengan menyertakan kode promo "KOPI20"</p>
+        <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+      </div>
+    </div>
+
+    <!-- Tentang -->
+    <div id="about" class="container">
+      <h2 class="text-center">Tentang Kami</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="about.png" class="img-fluid rounded mb-3" alt="Tentang Kami" />
+        </div>
+        <div class="col-md-6">
+          <p>Coffeshop adalah tempat nongkrong yang menyajikan kopi berkualitas dengan suasana yang nyaman dan cozy. Kami memiliki barista profesional yang ahli dalam meracik kopi dengan cita rasa yang sempurna.</p>
+          <p>Selain itu, kami juga menyediakan berbagai hidangan ringan dan camilan yang lezat untuk menemani waktu bersantai Anda. Kami berkomitmen untuk memberikan pengalaman terbaik bagi setiap pelanggan yang berkunjung.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <div id="contact" class="jumbotron jumbotron-fluid bg-light">
+      <div class="container">
+        <h2 class="text-center">Kontak Kami</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Masukkan pesan Anda"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h4>Alamat</h4>
+            <p>Jl. Kopi Nikmat No. 12, Kota Istimewa</p>
+            <h4>Jam Operasional</h4>
+            <p>Senin - Jumat: 08.00 - 22.00</p>
+            <p>Sabtu - Minggu: 10.00 - 24.00</p>
+            <h4>Kontak</h4>
+            <p>
+              <i class="fas fa-phone"></i> 022-1234567<br />
+              <i class="fas fa-envelope"></i> info@coffeshop.com
+            </p>
+            <h4>Ikuti Kami</h4>
+            <div class="social-links">
+              <a href="#" class="text-dark"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#" class="text-dark"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4 text-center">
+      <p>Coffeshop © 2023. All rights reserved.</p>
+    </footer>
+
+    <!-- Script bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script eksternal -->
+    <script>
+      $(document).ready(function () {
+        // Smooth scrolling for navigation links
+        $('a.nav-link').on('click', function (event) {
+          if (this.hash !== '') {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top - 70,
+              },
+              800,
+              function () {
+                window.location.hash = hash - 70;
+              }
+            );
+          }
+        });
+
+        // Tambahkan event listener untuk tombol "Beli Sekarang"
+        const buyButtons = document.querySelectorAll('.btn-primary');
+        buyButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const productName = button.closest('.card-body').querySelector('.card-title').textContent;
+            alert(`Anda telah membeli produk ${productName}`);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
